@@ -1,0 +1,4 @@
+node_modules/
+*.vsix
+.factory/logs/
+.factory/last-check.json
