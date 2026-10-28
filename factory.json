@@ -3,11 +3,14 @@
   "one_liner": "Retro phosphor-green VS Code colour theme matching Agent Globe.",
   "blueprint": "vscode-theme",
   "version": "0.1.0",
-  "check": ["lint", "build"],
+  "check": [
+    "lint",
+    "build"
+  ],
   "stopOnFail": true,
   "commands": {
     "install": "",
-    "lint": "node -e \"for (const f of ['package.json','themes/phosphor-color-theme.json']) JSON.parse(require('fs').readFileSync(f,'utf8')); console.log('json ok')\"",
+    "lint": "node scripts/lint.mjs",
     "typecheck": "",
     "test": "",
     "build": "npx --yes @vscode/vsce package --allow-missing-repository -o phosphor.vsix",
